@@ -1,0 +1,126 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(50,50,50);
+    font-family: Verdana, Tahoma, sans-serif; 
+    color: white;
+}
+
+header{
+    padding-top: 20px;
+    padding-left: 40px;
+    background-image: url(bilder/header_background.jpg);
+    color: white;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-image: url(bilder/header_background.jpg);
+    padding-right: 40px;
+}
+
+a{
+  color: white;
+  text-decoration: none;  
+}
+
+
+
+article p{
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 90%;
+}
+article a{
+    text-decoration: underline;
+}
+
+a:hover {
+    color: orangered;
+}
+
+
+footer{
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+
+footer a{
+    text-decoration: underline;   
+}
+
+.test{
+    color: orange;
+}
+
+.test a{
+    color: orange;
+    text-decoration: underline;
+}
+.test a:hover{
+    color: red;
+}
+
+#intro{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 10px ;
+    margin: 15px;
+    max-width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article{
+    background-color: rgb(60,60,60);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 10px ;
+    padding-left: 30px;
+    margin: 15px;
+}
+@media (min-width: 600px)
+{
+    #restauranger 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article
+    {
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+}
+@media (min-width: 960px)
+{
+    #restauranger 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article
+    {
+        flex-basis: 25%;
+        flex-grow: 1;
+    }
+}
+@media (min-width: 1200px)
+{
+    #restauranger 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article
+    {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+}
