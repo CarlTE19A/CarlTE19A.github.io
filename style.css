@@ -9,11 +9,11 @@ body{
 header{
     padding-top: 20px;
     padding-left: 40px;
-    background-image: url(bilder/header_background.jpg);
+    background-image: url(/bilder/header_background.jpg);
     color: white;
     border-bottom-width: 10px;
     border-bottom-style: solid;
-    border-image: url(bilder/header_background.jpg);
+    border-image: url(/bilder/header_background.jpg);
     padding-right: 40px;
 }
 
