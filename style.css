@@ -22,12 +22,6 @@ a{
   text-decoration: none;  
 }
 
-
-
-article p{
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 90%;
-}
 article a{
     text-decoration: underline;
 }
@@ -75,13 +69,54 @@ article{
     color: white;
     text-decoration: none;
     padding: 10px;
-    padding-right: 10px ;
-    padding-left: 30px;
+    padding-right: 5px ;
+    padding-left: 10px;
     margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
 }
-@media (min-width: 600px)
+
+.grid
 {
-    #restauranger 
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: none;
+    flex-grow: 1;
+}
+
+article .arttext
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+article img:not(.mapmarker){
+    color: rgb(50,50,50);
+    border: 5px solid;
+    text-align: right;
+    border-radius: 6%;
+    width: 200px;
+    grid-row: 1;
+    grid-column: 100000000;
+    align-self: stretch;
+}
+
+article p{
+    padding-right: 5px;
+    text-align: left;
+}
+
+@media (max-width: 400px)
+{
+    article img:not(.mapmarker){
+        width: 100px;
+    }
+}
+
+@media (min-width: 700px)
+{
+
+    .flex
     {
         display: flex;
         flex-wrap: wrap;
@@ -90,13 +125,15 @@ article{
 
     article
     {
-        flex-basis: 30%;
+        flex-basis: 40%;
         flex-grow: 1;
+        
     }
+
 }
-@media (min-width: 960px)
+@media (min-width: 1200px)
 {
-    #restauranger 
+    .flex
     {
         display: flex;
         flex-wrap: wrap;
@@ -109,9 +146,9 @@ article{
         flex-grow: 1;
     }
 }
-@media (min-width: 1200px)
+@media (min-width: 1550px)
 {
-    #restauranger 
+    .flex
     {
         display: flex;
         flex-wrap: wrap;
