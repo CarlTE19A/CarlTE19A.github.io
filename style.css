@@ -17,20 +17,6 @@ header{
     padding-right: 40px;
 }
 
-a{
-  color: white;
-  text-decoration: none;  
-}
-
-article a{
-    text-decoration: underline;
-}
-
-a:hover {
-    color: orangered;
-}
-
-
 footer{
     background-color: rgb(40, 40, 40);
     text-align: center;
@@ -38,77 +24,10 @@ footer{
     color: white;
 }
 
-footer a{
-    text-decoration: underline;   
-}
-
-.test{
-    color: orange;
-}
-
-.test a{
-    color: orange;
-    text-decoration: underline;
-}
-.test a:hover{
-    color: red;
-}
-
-#intro{
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 10px ;
-    margin: 15px;
-    max-width: 600px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-article{
-    background-color: rgb(60,60,60);
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 5px ;
-    padding-left: 10px;
-    margin: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    flex-direction: column;
-}
-
-.grid
-{
-    display: grid;
-    grid-template-rows: 2;
-    grid-template-columns: none;
-    flex-grow: 1;
-}
-
-article .arttext
-{
-    grid-row: 1;
-    grid-column: 1;
-}
-article img:not(.mapmarker){
-    color: rgb(50,50,50);
-    border: 5px solid;
-    text-align: right;
-    border-radius: 6%;
-    width: 200px;
-    grid-row: 1;
-    grid-column: 100000000;
-    align-self: stretch;
-}
-
-article p{
-    padding-right: 5px;
-    text-align: left;
-}
-
+/* Article Flex (+grid) */
 @media (max-width: 400px)
 {
-    article img:not(.mapmarker){
+    article .grid img:not(.mapmarker){
         width: 100px;
     }
 }
@@ -161,3 +80,107 @@ article p{
         flex-grow: 1;
     }
 }
+
+/*linking*/
+a{
+  color: white;
+  text-decoration: none;  
+}
+
+article a{
+    text-decoration: underline;
+}
+
+a:hover {
+    color: orangered;
+}
+
+footer a{
+    text-decoration: underline;   
+}
+
+.test{
+    color: orange;
+}
+
+.test a{
+    color: orange;
+    text-decoration: underline;
+}
+.test a:hover{
+    color: red;
+}
+
+
+#intro{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 10px ;
+    margin: 15px;
+    max-width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+article{
+    background-color: rgb(60,60,60);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 5px ;
+    padding-left: 10px;
+    margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+article p{
+    padding-right: 5px;
+    text-align: left;
+}
+/* Article Grid */
+.grid
+{
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: none;
+    flex-grow: 1;
+}
+
+article .arttext
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+article .grid img:not(.mapmarker){
+    color: rgb(50,50,50);
+    border: 5px solid;
+    text-align: right;
+    border-radius: 6%;
+    width: 200px;
+    grid-row: 1;
+    grid-column: 10;
+    align-self: stretch;
+}
+
+/*Forms */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+button[type=submit] {
+    background-color: transparent;
+    padding: 5px;
+  }
+
+  button[type=submit]:hover {
+    background-color: green;
+  }
